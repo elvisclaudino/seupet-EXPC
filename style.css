@@ -34,7 +34,59 @@ body {
     padding-right: 0;
 }
 
-.contato {
-    padding: 0 10%;
-    margin: 7px 0;
+.loginLink {
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 1em;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.ultimologin {
+    margin-right: 4em;
+}
+
+.boxLogin {
+    width: 500px;
+    height: 500px;
+    background-color: #6ef833;
+    border-radius: 2em;
+}
+
+.input-padrao{
+    width: 400px;
+    padding: 10px 0;
+    border-radius: 1px;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+.enviar {
+    width: 400px;
+    padding: 10px 0;
+    background-color:#29a32c;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 20px;
+    transition: 0.5s ;
+    cursor: pointer;
+    margin-top: 5px;
+    border: 3px solid white;
+}
+
+.enviar:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+.entrarSeupet {
+    margin-top: 2em;
+}
+
+.logoLogin {
+    
 }

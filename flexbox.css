@@ -24,3 +24,21 @@
     flex-grow: 1;
     justify-content: center;
 }
+
+.cabeçalhoLogin {
+    display: flex;
+    justify-content: right;
+}
+
+.boxLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
