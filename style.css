@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.logo {
+    margin-top: 23px;
+}
+
+.cabecalho {
+    background-color: #54ff65;
+}
+
+.cabecalhoPrincipal {
+    background-color: #29a32c;
+}
+
+.CabecalhoLogo-Nav{
+    width: 89%;
+    margin: -35px auto;
+}
+
+.cabecalho-link {
+    padding: 0 4em;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.ultimoLink {
+    padding-right: 0;
+}
+
+.contato {
+    padding: 0 10%;
+    margin: 7px 0;
+}
