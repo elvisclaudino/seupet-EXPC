@@ -73,24 +73,42 @@ body {
     color: rgb(1, 95, 17);
 }
 
-.boxLogin {
-    width: 500px;
-    height: 500px;
-    background-color: #6ef833;
-    border-radius: 2em;
+.loginPrincipal {
+    width: 75%;
+    height: 961px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.input-padrao{
-    width: 400px;
+.paiLogin {
+    height: 80%;
+}
+
+.boxLogin {
+    width: 560px;
+    height: 600px;
+    background-color: #6ef833;
+    border-radius: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-padrao {
+    width: 450px;
     padding: 10px 0;
-    border-radius: 1px;
+    border-radius: 8px;
     border: 2px solid black;
     margin-top: 5px;
+    font-size: 20px;
 }
 
 .enviar {
-    width: 400px;
-    padding: 10px 0;
+    width: 450px;
+    padding: 14px 0;
     background-color:#29a32c;
     color: white;
     font-weight: bold;
@@ -111,6 +129,22 @@ body {
     margin-top: 1em;
 }
 
+.telaLogin {
+    background: url(imagens/telainicial-vazio.jpg);
+}
+
+@media (max-width: 1920px) {
+    .telaLogin {
+        background: no-repeat url(imagens/bg-telainicial.jpg);
+    }
+}
+
+@media (max-width: 1800px) {
+    .telaLogin {
+        background: center url(imagens/bg-telainicial1800.jpg);
+    }
+}
+
 @media (max-width: 1500px) {
     .CabecalhoLogo-Nav {
         text-align: center;
@@ -123,6 +157,17 @@ body {
         text-transform: uppercase;
         font-family: 'Bebas Neue', cursive;
         font-size: 20px;
+    }
+
+    .loginPrincipal {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .telaLogin {
+        background: center url(imagens/bg-telainicial1500.jpg);
     }
 }
 
@@ -148,6 +193,9 @@ body {
     .cabecalho-link {
         padding: 1px 1em;
     }
+    .telaLogin {
+        background: url(imagens/telainicial-vazio.jpg);
+    }
 }
 
 @media (max-width: 920px) {
@@ -161,5 +209,28 @@ body {
     }
     .cabecalhoLogin {
         justify-content: center;
+    }
+
+    .boxLogin {
+        width: 350px;
+        height: 450px;
+    }
+
+    .input-padrao {
+        width: 300px;
+    }
+    
+    .enviar {
+        width: 300px;
+    }
+
+    .paiLogin {
+        display: flex;
+        height: 80%;
+        align-items: center;
+    }
+
+    .telaLogin {
+        background: url(imagens/telainicial-vazio.jpg);
     }
 }
