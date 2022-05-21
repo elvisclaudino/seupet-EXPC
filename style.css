@@ -86,3 +86,57 @@ body {
 .entrarSeupet {
     margin-top: 1em;
 }
+
+@media (max-width: 1500px) {
+    .CabecalhoLogo-Nav {
+        text-align: center;
+    }
+    .cabecalho-link {
+        padding: 1px 3em;
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+
+@media (max-width: 1400px) {
+    .CabecalhoLogo-Nav {
+        text-align: center;
+    }
+    .cabecalho-link {
+        padding: 1px 2em;
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .CabecalhoLogo-Nav {
+        text-align: center;
+    }
+    .cabecalho-link {
+        padding: 1px 10px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 810px) {
+    .CabecalhoLogo-Nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cabecalho-nav {
+        flex-direction: column;
+    }
+}
