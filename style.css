@@ -28,25 +28,49 @@ body {
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
+    transition: 0.5s all;
+}
+
+.cabecalho-link:hover {
+    color: rgb(0, 49, 4);
+    font-size: 22px;
 }
 
 .ultimoLink {
     padding-right: 0;
 }
 
-.loginLink {
-    text-decoration: none;
-    padding: 15px;
-    margin-left: 1em;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: white;
-    border-radius: 1em;
+.cabeçalhoSecundario {
+    margin: 0 ;
 }
 
-.ultimologin {
-    margin-right: 4em;
+.contatoCabecalho {
+    font-size: 40px;
+}
+
+.cabecalhoLogin {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cabecalhoLogin p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.loginLink {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.loginLink:hover {
+    text-decoration: underline;
+    color: rgb(1, 95, 17);
 }
 
 .boxLogin {
@@ -100,6 +124,7 @@ body {
         font-family: 'Bebas Neue', cursive;
         font-size: 20px;
     }
+}
 
 @media (max-width: 1400px) {
     .CabecalhoLogo-Nav {
@@ -121,22 +146,20 @@ body {
         text-align: center;
     }
     .cabecalho-link {
-        padding: 1px 10px;
-        color: white;
-        text-decoration: none;
-        display: block;
-        text-transform: uppercase;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 20px;
+        padding: 1px 1em;
     }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 920px) {
     .CabecalhoLogo-Nav {
         flex-direction: column;
         text-align: center;
     }
     .cabecalho-nav {
         flex-direction: column;
+        margin-bottom: 3em;
+    }
+    .cabecalhoLogin {
+        justify-content: center;
     }
 }

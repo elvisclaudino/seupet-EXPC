@@ -11,6 +11,7 @@
 .cabecalho {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .CabecalhoLogo-Nav {
@@ -25,9 +26,9 @@
     justify-content: center;
 }
 
-.cabeçalhoLogin {
+.cabecalhoSecundario {
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .boxLogin {
@@ -36,6 +37,9 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.cabecalhoLogin {
 }
 
 main {
