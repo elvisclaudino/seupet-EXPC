@@ -1,51 +1,16 @@
-body {
-    background-color: white;
-    font-family: 'Open Sans',Arial,sans-serif;
-}
-
-.logo {
-    margin-top: 23px;
-}
+/* ------------------------Header-------------------------- */
 
 .cabecalho {
     background-color: #54ff65;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.cabecalhoPrincipal {
-    background-color: #29a32c;
-}
-
-.CabecalhoLogo-Nav{
-    width: 89%;
-    margin: -35px auto;
-}
-
-.cabecalho-link {
-    padding: 0 4em;
-    color: white;
-    text-decoration: none;
-    display: block;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    transition: 0.5s all;
-}
-
-.cabecalho-link:hover {
-    color: rgb(0, 49, 4);
-    font-size: 22px;
-}
-
-.ultimoLink {
-    padding-right: 0;
-}
-
-.cabeçalhoSecundario {
+.cabecalhoSecundario {
     margin: 0 ;
-}
-
-.contatoCabecalho {
-    font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .cabecalhoLogin {
@@ -71,6 +36,58 @@ body {
 .loginLink:hover {
     text-decoration: underline;
     color: rgb(1, 95, 17);
+}
+
+.cabecalhoPrincipal {
+    background-color: #29a32c;
+}
+
+.CabecalhoLogo-Nav{
+    width: 89%;
+    margin: -35px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 23px;
+}
+
+.cabecalho-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.cabecalho-link {
+    padding: 0 4em;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    transition: 0.5s all;
+}
+
+.cabecalho-link:hover {
+    color: rgb(0, 49, 4);
+    font-size: 22px;
+}
+
+.ultimoLink {
+    padding-right: 0;
+}
+
+/*----------------------------------------------------------*/
+
+/*--------------------------Login---------------------------*/
+
+.telaLogin {
+    display: flex;
+    justify-content: center;
+    background: url(imagens/telainicial-vazio.jpg);
 }
 
 .loginPrincipal {
@@ -106,6 +123,10 @@ body {
     font-size: 20px;
 }
 
+.entrarSeupet {
+    margin-top: 1em;
+}
+
 .enviar {
     width: 450px;
     padding: 14px 0;
@@ -125,13 +146,9 @@ body {
     transform: scale(1.05);
 }
 
-.entrarSeupet {
-    margin-top: 1em;
-}
+/*---------------------------------------------------------------*/
 
-.telaLogin {
-    background: url(imagens/telainicial-vazio.jpg);
-}
+/*--------------------------Responsive---------------------------*/
 
 @media (max-width: 1920px) {
     .telaLogin {
@@ -146,6 +163,8 @@ body {
 }
 
 @media (max-width: 1500px) {
+    /*--------------------------Header---------------------------*/
+
     .CabecalhoLogo-Nav {
         text-align: center;
     }
@@ -159,6 +178,14 @@ body {
         font-size: 20px;
     }
 
+    /*----------------------------------------------------------*/
+
+    /*--------------------------Login---------------------------*/
+
+    .telaLogin {
+        background: center url(imagens/bg-telainicial1500.jpg);
+    }
+
     .loginPrincipal {
         justify-content: center;
         align-items: center;
@@ -166,12 +193,12 @@ body {
         text-align: center;
     }
 
-    .telaLogin {
-        background: center url(imagens/bg-telainicial1500.jpg);
-    }
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 1400px) {
+    /*--------------------------Header---------------------------*/
+    
     .CabecalhoLogo-Nav {
         text-align: center;
     }
@@ -184,21 +211,34 @@ body {
         font-family: 'Bebas Neue', cursive;
         font-size: 20px;
     }
+
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 1150px) {
+    /*--------------------------Header---------------------------*/
+
     .CabecalhoLogo-Nav {
         text-align: center;
     }
     .cabecalho-link {
         padding: 1px 1em;
     }
+
+    /*----------------------------------------------------------*/
+
+    /*--------------------------Login---------------------------*/
+
     .telaLogin {
         background: url(imagens/telainicial-vazio.jpg);
     }
+
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 920px) {
+    /*--------------------------Header---------------------------*/
+
     .CabecalhoLogo-Nav {
         flex-direction: column;
         text-align: center;
@@ -210,19 +250,10 @@ body {
     .cabecalhoLogin {
         justify-content: center;
     }
-
-    .boxLogin {
-        width: 350px;
-        height: 450px;
-    }
-
-    .input-padrao {
-        width: 300px;
-    }
     
-    .enviar {
-        width: 300px;
-    }
+    /*----------------------------------------------------------*/
+
+    /*--------------------------Login---------------------------*/
 
     .paiLogin {
         display: flex;
@@ -230,7 +261,61 @@ body {
         align-items: center;
     }
 
-    .telaLogin {
-        background: url(imagens/telainicial-vazio.jpg);
+    .boxLogin {
+        width: 500px;
+        height: 600px;
     }
+
+    .input-padrao {
+        width: 450px;
+    }
+    
+    .enviar {
+        width: 450px;
+    }
+
+    /*----------------------------------------------------------*/
+}
+
+@media (max-width: 500px) {
+    /*--------------------------Login---------------------------*/
+
+    .boxLogin {
+        width: 370px;
+        height: 450px;
+    }
+    .input-padrao {
+        width: 320px;
+    }
+    .enviar {
+        width: 320px;
+    }
+
+    /*----------------------------------------------------------*/
+}
+
+@media (max-width: 370px) {
+    
+    .cabecalhoLogin p {
+        font-size: 14px;
+    }
+
+    .loginLink {
+        font-size: 16px;
+    }
+    
+    /*--------------------------Login---------------------------*/
+    
+    .boxLogin {
+        width: 310px;
+        height: 400px;
+    }
+    .input-padrao {
+        width: 200px;
+    }
+    .enviar {
+        width: 200px;
+    }
+    
+    /*----------------------------------------------------------*/
 }
