@@ -5,7 +5,13 @@ body {
 
 .logo {
     margin-top: 23px;
+    transition: 0.5s;
 }
+
+.logo:hover{
+    opacity: 0.9 ;
+}
+
 
 .cabecalho {
     background-color: #54ff65;
