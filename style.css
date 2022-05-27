@@ -238,6 +238,118 @@
 
 /*---------------------------------------------------------------*/
 
+/*-------------------------Veterinários--------------------------*/
+
+.mainVeterinarios {
+    background: #54ff6597;
+    display: flex;
+}
+
+.boxVeterinarios {
+    width: 30%;
+    padding: 0 20px 0 40px;
+}
+
+.tituloVeterinarios {
+    margin-top: 2em;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.selecaoVeterinarios {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.tituloSelecaoVeterinarios {
+    font-size: 22px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 1em;
+}
+
+.selectVeterinarios {
+    width: 78%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.informVeterinarios {
+    width: 72%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-top: 5px;
+    font-size: 21px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.ultimoInput {
+    margin-bottom: 1em;
+}
+
+.enviarVeterinarios {
+    width: 78%;
+    padding: 14px 0;
+    background-color:#29a32c;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 20px;
+    transition: 0.5s ;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom:5em;
+    border: 3px solid white;
+}
+
+.enviarVeterinarios:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+.veterinariosPai {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background: url(imagens/bg-home-vazio.jpg);
+}
+
+.veterinarios {
+    height: 33.33%;
+    border: solid white 2px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nomeVeterinario {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.dadosVeterinarios {
+    font-size: 26px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 1em;
+    margin-left: 10px;
+}
+
+.avaliacao {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+
+/*---------------------------------------------------------------*/
+
 /*--------------------------Documentos---------------------------*/
 
 .mainDocumentos {
@@ -271,20 +383,22 @@
 
 .selectDocumentos {
     width: 76%;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 8px;
     border: 2px solid white;
     margin-top: 5px;
     font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .informDocumentos {
     width: 72%;
-    padding: 10px 10px;
+    padding: 10px 12px;
     border-radius: 8px;
     border: 2px solid white;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 21px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .ultimoSelect {
@@ -320,8 +434,8 @@
 }
 
 .mapaPrincipal {
-    width: 80%;
-    height: 60%;
+    width: 90%;
+    height: 88%;
     border-radius: 6px;
     border: solid white 5px;
 }
@@ -399,6 +513,10 @@
         font-size: 28px;
     }
 
+    .informDocumentos {
+        width: 71%;
+    }
+
     /*----------------------------------------------------------*/
 }
 
@@ -462,6 +580,10 @@
     }
 
     /*----------------------------------------------------------*/
+
+    .informDocumentos {
+        width: 70%;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -483,6 +605,19 @@
     }
 
     /*----------------------------------------------------------*/
+
+    .informDocumentos {
+        width: 69%;
+    }
+
+    .boxVeterinarios {
+        width: 40%;
+        padding: 0 20px 0 40px;
+    }
+
+    .veterinariosPai {
+        width: 60%;
+    }
 }
 
 @media (max-width: 920px) {
@@ -552,6 +687,7 @@
 
     .tituloDocumentos {
         text-align: center;
+        width: 76%;
     }
 
     .selecaoDocumentos {
@@ -562,15 +698,15 @@
     }
 
     .selectDocumentos {
-        width: 94%;
+        width: 76%;
     }
 
     .informDocumentos {
-        width: 88%;
+        width: 73%;
     }
 
     .enviarDocumentos {
-        width: 95%;
+        width: 76%;
         margin-bottom:1em;
     }
 
@@ -582,6 +718,41 @@
         width: 92%;
         height: 400px;
         margin: 40px;
+    }
+
+    /*----------------------------------------------------------*/
+
+    /*-----------------------Veterinários-----------------------*/
+
+    .mainVeterinarios {
+        flex-direction: column;
+    }
+
+    .boxVeterinarios {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tituloVeterinarios {
+        text-align: center;
+    }
+
+    .selecaoVeterinarios {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .enviarVeterinarios {
+        margin-bottom: 1em;
+    }
+
+    .veterinariosPai {
+        width: 100%;
     }
 
     /*----------------------------------------------------------*/
@@ -620,6 +791,10 @@
         width: 90%;
         height: 350px;
         margin: 14px;
+    }
+
+    .informDocumentos {
+        width: 70%;
     }
 
     /*----------------------------------------------------------*/
