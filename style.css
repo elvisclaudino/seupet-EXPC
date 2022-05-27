@@ -79,7 +79,7 @@
 
 .cabecalho-link:hover {
     color: rgb(0, 49, 4);
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .ultimoLink {
@@ -92,7 +92,9 @@
 /*---------------------Footer-----------------------*/
 
 .footer {
-    background-color:#29a32c;    
+    background-color: #29a32c;
+    max-width: 100%;
+    height: 75px;    
     font-family: 'Bebas Neue', cursive;
     color: white;
     height: 150px;
@@ -187,8 +189,150 @@
 
 /*---------------------------------------------------------------*/
 
+/*--------------------------Home---------------------------------*/
 
-/*--------------------------MeuPet---------------------------*/
+.mainHome {
+    background: url(imagens/bg-home-vazio.jpg) fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.todosPosts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.posts {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.user {
+    font-size: 34px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    margin: 1em 0 10px 0;
+}
+
+.postImagem {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.comentarioPai {
+    width: 97%;
+}
+
+.comentario {
+    border: solid #29a32c 2px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.ultimoComentario {
+    margin-bottom: 2em;
+}
+
+/*---------------------------------------------------------------*/
+
+/*--------------------------Documentos---------------------------*/
+
+.mainDocumentos {
+    background: #54ff6597;
+    display: flex;
+}
+
+.boxDocumentos {
+    width: 40%;
+    padding: 0 20px 0 40px;
+}
+
+.tituloDocumentos {
+    margin-top: 2em;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.selecaoDocumentos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.tituloSelecaoDocumentos {
+    font-size: 22px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 1em;
+}
+
+.selectDocumentos {
+    width: 76%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.informDocumentos {
+    width: 72%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-top: 10px;
+    font-size: 21px;
+}
+
+.ultimoSelect {
+    margin-bottom: 1em;
+}
+
+.enviarDocumentos {
+    width: 76%;
+    padding: 14px 0;
+    background-color:#29a32c;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 20px;
+    transition: 0.5s ;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom:5em;
+    border: 3px solid white;
+}
+
+.enviarDocumentos:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+.mapaDocumentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background: url(imagens/bg-home-vazio.jpg) fixed;
+}
+
+.mapaPrincipal {
+    width: 80%;
+    height: 60%;
+    border-radius: 6px;
+    border: solid white 5px;
+}
+
+/*---------------------------------------------------------------*/
+
+/*-----------------------------MeuPet----------------------------*/
 
 .boxCadastroPet {
     display: flex;
@@ -202,25 +346,64 @@
     font-size:30px;
     width: 560px;
     height: 600px;
-
 }
 
-
 /*---------------------------------------------------------------*/
-
 
 /*--------------------------Responsive---------------------------*/
 
 @media (max-width: 1920px) {
+    /*--------------------------Login---------------------------*/
+
     .telaLogin {
         background: no-repeat url(imagens/bg-telainicial.jpg);
     }
+
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 1800px) {
+    /*--------------------------Login---------------------------*/
+
     .telaLogin {
         background: center url(imagens/bg-telainicial1800.jpg);
     }
+
+    /*----------------------------------------------------------*/
+
+    /*--------------------------Home----------------------------*/
+
+    .mainHome {
+    background: url(imagens/bg-home-vazio.jpg) fixed;
+    }
+
+    .todosPosts {
+        background: none;
+    }
+
+    /*----------------------------------------------------------*/
+}
+
+@media (max-width: 1540px) {
+    /*--------------------------Home----------------------------*/
+
+    .mainHome {
+        background: url(imagens/bg-home1500.jpg) no-repeat fixed;
+    }
+
+    .todosPosts {
+        background: none;
+    }
+
+    /*----------------------------------------------------------*/
+
+    /*------------------------Documentos------------------------*/
+
+    .tituloDocumentos {
+        font-size: 28px;
+    }
+
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 1500px) {
@@ -229,6 +412,7 @@
     .CabecalhoLogo-Nav {
         text-align: center;
     }
+
     .cabecalho-link {
         padding: 1px 3em;
         color: white;
@@ -237,6 +421,14 @@
         text-transform: uppercase;
         font-family: 'Bebas Neue', cursive;
         font-size: 20px;
+    }
+
+    /*----------------------------------------------------------*/
+
+    /*--------------------------Home----------------------------*/
+
+    .mainHome {
+        background: url(imagens/bg-home-vazio.jpg) fixed;
     }
 
     /*----------------------------------------------------------*/
@@ -336,6 +528,67 @@
     }
 
     /*----------------------------------------------------------*/
+
+    /*--------------------------Home----------------------------*/
+
+    .user {
+        font-size: 30px;
+    }
+    .posts {
+        width: 70%;
+    }
+
+    /*----------------------------------------------------------*/
+
+    /*------------------------Documentos------------------------*/
+
+    .mainDocumentos {
+        flex-direction: column;
+    }
+
+    .boxDocumentos {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tituloDocumentos {
+        text-align: center;
+    }
+
+    .selecaoDocumentos {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .selectDocumentos {
+        width: 94%;
+    }
+
+    .informDocumentos {
+        width: 88%;
+    }
+
+    .enviarDocumentos {
+        width: 95%;
+        margin-bottom:1em;
+    }
+
+    .mapaDocumentos {
+        width: 100%;
+    }
+
+    .mapaPrincipal {
+        width: 92%;
+        height: 400px;
+        margin: 40px;
+    }
+
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 500px) {
@@ -343,13 +596,34 @@
 
     .boxLogin {
         width: 370px;
-        height: 450px;
+        height: 500px;
     }
     .input-padrao {
         width: 320px;
     }
     .enviar {
         width: 320px;
+    }
+
+    /*----------------------------------------------------------*/
+
+    /*--------------------------Home----------------------------*/
+
+    .user {
+        font-size: 30px;
+    }
+    .posts {
+        width: 90%;
+    }
+
+    /*----------------------------------------------------------*/
+
+    /*------------------------Documentos------------------------*/
+
+    .mapaPrincipal {
+        width: 90%;
+        height: 350px;
+        margin: 14px;
     }
 
     /*----------------------------------------------------------*/
@@ -368,12 +642,18 @@
     /*--------------------------Login---------------------------*/
     
     .boxLogin {
-        width: 310px;
-        height: 400px;
+        width: 250px;
+        height: 500px;
     }
+
+    h1 img {
+        width: 230px;
+    }
+
     .input-padrao {
-        width: 200px;
+        width: 160px;
     }
+
     .enviar {
         width: 200px;
     }
