@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="flexbox.css">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        
     </head>
 
     <body>
@@ -34,8 +36,74 @@
                 </div>
             </div>
         </header>
-        <main>
 
+        <main>
+            <main class="mainVeterinarios">
+                <div class="boxVeterinarios">
+                    <h2 class="tituloVeterinarios">Procure por Veterinários:</h2>
+                    <fieldset class="selecaoVeterinarios">
+    
+                        <legend class="tituloSelecaoVeterinarios">Selecione a espécie do seu animal:</legend>
+                        <select class="selectVeterinarios" required>
+                            <option>Felinos</option>
+                            <option>Canídeos</option>
+                            <option>Anfíbios</option>
+                            <option>Répteis</option>
+                        </select>
+
+                        <legend class="tituloSelecaoVeterinarios">Selecione o peso do seu animal:</legend>
+                        <select class="selectVeterinarios" required>
+                            <option>Pequeno: 1 à 5KG</option>
+                            <option>Médio: 5 à 10KG</option>
+                            <option>Grande: 10KG ou mais</option>
+                        </select>
+
+                        <legend class="tituloSelecaoVeterinarios">Selecione o tipo de atendimento:</legend>
+                        <select class="selectVeterinarios" required>
+                            <option>Emergência 24Hrs</option>
+                            <option>Urgência</option>
+                            <option>Consulta Eletiva</option>
+                        </select>
+    
+                        <label class="tituloSelecaoVeterinarios" for="veterinariosCep">Informe seu CEP da região de preferência:</label>
+                        <input type="text" id="veterinariosCep" required placeholder="00000-000" class="informVeterinarios">
+
+                        <label class="tituloSelecaoVeterinarios" for="veterinariosData">Selecione a data de atendimento:</label>
+                        <input type="date" id="veterinariosData" required class="informVeterinarios">
+    
+                        <label class="tituloSelecaoVeterinarios" for="veterinariosHora">Selecione o horário de atendimento:</label>
+                        <input type="time" id="veterinariosHora" required class="informVeterinarios ultimoInput">
+    
+                    </fieldset>
+    
+                    <input type="submit" value="Buscar" class="enviarVeterinarios">
+                </div>
+
+                <div class="veterinariosPai">
+                    <div class="veterinarios">
+                        <h2 class="nomeVeterinario">&#128100; Dr. Gabriel Fasolim</h2>
+                        <p class="dadosVeterinarios">&#127891; CRMV: 4472</p>
+                        <p class="dadosVeterinarios">&#127968; R. Júlio Wischral, 1099 - Uberaba - Curitiba</p>
+                        <p class="dadosVeterinarios">&#128222; (41) 3350-8034</p>
+                        <p class="avaliacao">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+                    </div>
+
+                    <div class="veterinarios">
+                        <h2 class="nomeVeterinario">&#128100; Dr. Cauã Brito</h2>
+                        <p class="dadosVeterinarios">&#127891; CRMV: 10425</p>
+                        <p class="dadosVeterinarios">&#127968; Rua Myltho Anselmo da Silva, 1004 - Mercês, Curitiba</p>
+                        <p class="dadosVeterinarios">&#128222; (41) 3357-6678</p>
+                        <p class="avaliacao">&#11088;&#11088;&#11088;&#11088;</p>
+                    </div>
+
+                    <div class="veterinarios">
+                        <h2 class="nomeVeterinario">&#128100; Dra. Mariana Ferreira</h2>
+                        <p class="dadosVeterinarios">&#127891; CRMV: 14564</p>
+                        <p class="dadosVeterinarios">&#127968; Av. Iguaçu, 3330 - Água Verde, Curitiba</p>
+                        <p class="dadosVeterinarios">&#128222; Telefone: (41) 3342-9670</p>
+                        <p class="avaliacao">&#11088;&#11088;&#11088;</p>
+                    </div>
+                </div>
         </main>
 
         <footer class="footer">
