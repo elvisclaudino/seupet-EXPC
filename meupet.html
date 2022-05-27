@@ -34,21 +34,36 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div class="boxCadastroPet">
-                <h2>Cadastre seu Pet:</h2>
-                <fieldset>
-                    <input type="text" id="CadastroPetTipo" required placeholder="Cachorro" class="input-padrao">
-                    <input type="text" id="cadastroPetRaca" required placeholder="Golden Retriever" class="input-padrao">
-                    <input type="email" id="cadastroPetSexo" required placeholder="Macho" class="input-padrao">
-                    <input type="text" id="cadastroPetNascimento" required placeholder="12/12/12" class="input-padrao">
-                    <input type="text" id="cadastroPetPeso" required placeholder="10kg" class="input-padrao">
-                    <input type="submit" value="Cadastrar" class="enviar">
-                    <input type="submit" value="Editar" class="enviar">
-                </fieldset>
-            </div>
 
-            <div class="boxListaDePets">
+        <main class="mainDocumentos">
+            <div class="boxDocumentos">
+                <h2 class="tituloDocumentos">Cadastre as informações do Seu Pet:</h2>
+                <fieldset class="selecaoDocumentos">
+
+                    <legend class="tituloSelecaoDocumentos">Selecione a espécie do seu animal:</legend>
+                    <select class="selectDocumentos" required>
+                        <option>Felinos</option>
+                        <option>Canídeos</option>
+                        <option>Anfíbios</option>
+                        <option>Répteis</option>
+                    </select>
+
+                    <legend class="tituloSelecaoDocumentos">Selecione o sexo do seu animal:</legend>
+                    <select class="selectDocumentos" required>
+                        <option>Macho</option>
+                        <option>Fêmea</option>>
+                    </select>
+
+                    <label class="tituloSelecaoDocumentos" for="documentosCep">Informe a idade do seu animal:</label>
+                    <input type="text" id="documentosCep" required placeholder="anos" class="informDocumentos">
+
+                    <label class="tituloSelecaoDocumentos" for="documentosCep">Informe o peso do seu animal:</label>
+                    <input type="text" id="documentosCep" required placeholder="kg" class="informDocumentos">
+                    
+                </fieldset>
+
+                <input type="submit" value="Cadastrar" class="enviarDocumentos">
+                <input type="submit" value="Editar" class="enviarDocumentos">
 
             </div>
         </main>
@@ -64,5 +79,6 @@
                 <p></p> 
             </div>
         </footer>
+        
     </body>
 </html>
