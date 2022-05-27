@@ -342,8 +342,16 @@
 .dadosVeterinarios {
     font-size: 26px;
     font-family: 'Bebas Neue', cursive;
-    margin-top: 1em;
+    margin-top: 14px;
     margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s all;
+}
+
+.dadosVeterinarios:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .avaliacao {
@@ -448,18 +456,138 @@
 
 /*-----------------------------MeuPet----------------------------*/
 
-.boxCadastroPet {
+.mainMeupet {
+    background: #54ff6597;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.boxMeupet {
+    width: 30%;
+    padding: 0 20px 0 40px;
+}
+
+.tituloMeupet {
+    margin-top: 2em;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.selecaoMeupet {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    background-color: #54ff6597;
-    font-family: 'Bebas Neue', cursive;;
-    font-weight: 30px;
-    font-size:30px;
-    width: 560px;
-    height: 600px;
+    margin-top: 2em;
+}
+
+.tituloSelecaoMeupet {
+    font-size: 22px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 1em;
+}
+
+.selectMeupet {
+    width: 78%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.informMeupet {
+    width: 72%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-top: 5px;
+    font-size: 21px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.ultimoInputMeupet {
+    margin-bottom: 1em;
+}
+
+.enviarMeupet {
+    width: 78%;
+    padding: 14px 0;
+    background-color:#29a32c;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 20px;
+    transition: 0.5s ;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    border: 3px solid white;
+}
+
+.ultimoInputEnviarSeupet {
+    margin-bottom: 5em;
+}
+
+.enviarMeupet:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+.seupetPai {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background: url(imagens/bg-home-vazio.jpg);
+}
+
+.seupet {
+    height: 22.33%;
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.seupet img {
+    width: 20%;
+    border-radius: 10px;
+}
+
+.fotoNome {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nomeSeupet {
+    margin-left: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.seupetDados {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    border: solid white 3px;
+    border-radius: 10px;
+}
+
+.dadosSeupet {
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all;
+}
+
+.infosSeupet:hover {
+    color: green;
 }
 
 /*---------------------------------------------------------------*/
@@ -585,9 +713,13 @@
 
     /*----------------------------------------------------------*/
 
+    /*------------------------Documentos------------------------*/
+
     .informDocumentos {
         width: 70%;
     }
+
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 1150px) {
@@ -610,6 +742,8 @@
 
     /*----------------------------------------------------------*/
 
+    /*------------------------Documentos------------------------*/
+
     .informDocumentos {
         width: 69%;
     }
@@ -622,10 +756,12 @@
     .veterinariosPai {
         width: 60%;
     }
+
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 920px) {
-    /*--------------------------Header---------------------------*/
+    /*------------------------Header---------------------------*/
 
     .CabecalhoLogo-Nav {
         flex-direction: column;
@@ -760,6 +896,35 @@
     }
 
     /*----------------------------------------------------------*/
+
+    .mainMeupet {
+        flex-direction: column;
+    }
+
+    .boxMeupet {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tituloSelecaoMeupet {
+        text-align: center;
+    }
+
+    .selecaoMeupet {
+        width: 90%;
+        align-items: center;
+    }
+
+    .seupetPai {
+        width: 100%;
+    }
+
+    .ultimoInputEnviarSeupet {
+        margin-bottom: 1em;
+    }
 }
 
 @media (max-width: 500px) {
@@ -805,6 +970,8 @@
 }
 
 @media (max-width: 370px) {
+
+    /*------------------------Header---------------------------*/
     
     .cabecalhoLogin p {
         font-size: 14px;
@@ -813,6 +980,8 @@
     .loginLink {
         font-size: 16px;
     }
+
+    /*----------------------------------------------------------*/
     
     /*--------------------------Login---------------------------*/
     

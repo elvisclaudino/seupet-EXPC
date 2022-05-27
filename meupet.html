@@ -35,36 +35,64 @@
             </div>
         </header>
 
-        <main class="mainDocumentos">
-            <div class="boxDocumentos">
-                <h2 class="tituloDocumentos">Cadastre as informações do Seu Pet:</h2>
-                <fieldset class="selecaoDocumentos">
+        <main class="mainMeupet">
+            <div class="boxMeupet">
+                <h2 class="tituloMeupet">Cadastre seu pet:</h2>
+                <fieldset class="selecaoMeupet">
 
-                    <legend class="tituloSelecaoDocumentos">Selecione a espécie do seu animal:</legend>
-                    <select class="selectDocumentos" required>
-                        <option>Felinos</option>
+                    <legend class="tituloSelecaoMeupet">Espécie:</legend>
+                    <select class="selectMeupet" required>
                         <option>Canídeos</option>
+                        <option>Felinos</option>
                         <option>Anfíbios</option>
                         <option>Répteis</option>
                     </select>
 
-                    <legend class="tituloSelecaoDocumentos">Selecione o sexo do seu animal:</legend>
-                    <select class="selectDocumentos" required>
+                    <label class="tituloSelecaoMeupet" for="meupetRaca">Nome:</label>
+                    <input type="text" id="meupetRaca" required placeholder="Juninho" class="informMeupet">
+
+                    <label class="tituloSelecaoMeupet" for="meupetRaca">Raça:</label>
+                    <input type="text" id="meupetRaca" required placeholder="Golden Retriever" class="informMeupet">
+
+                    <legend class="tituloSelecaoMeupet">Sexo:</legend>
+                    <select class="selectMeupet" required>
                         <option>Macho</option>
-                        <option>Fêmea</option>>
+                        <option>Fêmea</option>
                     </select>
 
-                    <label class="tituloSelecaoDocumentos" for="documentosCep">Informe a idade do seu animal:</label>
-                    <input type="text" id="documentosCep" required placeholder="anos" class="informDocumentos">
+                    <label class="tituloSelecaoVeterinarios" for="meupetIdade">Idade:</label>
+                    <input type="text" id="meupetIdade" required placeholder="6 meses" class="informMeupet">
 
-                    <label class="tituloSelecaoDocumentos" for="documentosCep">Informe o peso do seu animal:</label>
-                    <input type="text" id="documentosCep" required placeholder="kg" class="informDocumentos">
-                    
+                    <label class="tituloSelecaoVeterinarios" for="meupetPeso">Peso:</label>
+                    <input type="text" id="meupetPeso" required placeholder="8KG" class="informMeupet ultimoInputMeupet">
+
                 </fieldset>
 
-                <input type="submit" value="Cadastrar" class="enviarDocumentos">
-                <input type="submit" value="Editar" class="enviarDocumentos">
+                <input type="submit" value="Editar" class="enviarMeupet">
+                <input type="submit" value="Novo cadastro" class="enviarMeupet ultimoInputEnviarSeupet">
+            </div>
 
+            <div class="seupetPai">
+                <div class="seupet">
+                    <div class="fotoNome">
+                        <img src="imagens/golden.png" alt="">
+                        <h2 class="nomeSeupet">Juninho</h2>
+                    </div>
+                </div>
+
+                <div class="seupetDados">
+                    <p class="dadosSeupet">Espécie: Canídeo</p>
+                    <p class="dadosSeupet">Raça: Golden Retriever</p>
+                    <p class="dadosSeupet">Sexo: Macho</p>
+                    <p class="dadosSeupet">Idade: 6 Meses</p>
+                    <p class="dadosSeupet">Peso: 8KG</p>
+                </div>
+
+                <div class="seupetDados">
+                    <a class="dadosSeupet infosSeupet" href="">Donos &#10132;</a>
+                    <a class="dadosSeupet infosSeupet" href="">Documentação &#10132;</a>
+                    <a class="dadosSeupet infosSeupet" href="">Histórico de tratamentos &#10132;</a>
+                </div>
             </div>
         </main>
 
