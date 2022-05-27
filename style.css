@@ -92,32 +92,32 @@
 /*---------------------Footer-----------------------*/
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    background-color: #29a32c;
-    max-width: 100%;
-    height: 75px;    
+    background-color:#29a32c;    
     font-family: 'Bebas Neue', cursive;
     color: white;
+    height: 150px;
 }
 
 .footerLogo {
     display: flex;
-    height: 75%;
-    justify-content: center;  
+    flex-direction: column;
+    align-items: center;
 }
+
+.footerLogo img {
+    height: 50px;
+}
+
 
 .footerInfo {
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
 }
 
-.footerContato {
-    display: flex;
-    background-color: #54ff65;
-    max-width: 100%;
+.footerInfoConteudo {
+    margin-top: 1em;
 }
-
 
 /*----------------------------------------------------------*/
 
@@ -328,7 +328,7 @@
     }
 
     .input-padrao {
-        width: 420px;
+        width: 450px;
     }
     
     .enviar {
@@ -346,7 +346,7 @@
         height: 450px;
     }
     .input-padrao {
-        width: 290px;
+        width: 320px;
     }
     .enviar {
         width: 320px;
@@ -356,8 +356,6 @@
 }
 
 @media (max-width: 370px) {
-
-    /*--------------------------Header---------------------------*/
     
     .cabecalhoLogin p {
         font-size: 14px;
@@ -367,8 +365,6 @@
         font-size: 16px;
     }
     
-    /*----------------------------------------------------------*/
-    
     /*--------------------------Login---------------------------*/
     
     .boxLogin {
@@ -376,7 +372,7 @@
         height: 400px;
     }
     .input-padrao {
-        width: 170px;
+        width: 200px;
     }
     .enviar {
         width: 200px;
@@ -384,5 +380,3 @@
     
     /*----------------------------------------------------------*/
 }
-
-/*--------------------------------------------------------------*/
