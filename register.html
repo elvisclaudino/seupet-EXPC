@@ -8,8 +8,8 @@
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="flexbox.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="./cadastro.js"></script>
 </head>
 
 <body>
@@ -19,19 +19,19 @@
         <div class="boxLogin">
           <h1><img src="imagens/logo.png" alt=""></h1>
           <fieldset>
-            <input type="text" id="CadastroNome" required placeholder="Nome" class="input-padrao">
-            <input type="text" id="cadastroCPF" required placeholder="CPF" class="input-padrao">
-            <input type="email" id="cadastroEmail" required placeholder="Email" class="input-padrao">
+            <input type="text" id="cadastroNome" required placeholder="Nome" class="input-padrao">
+            <input type="text" id="cadastroCPF" required placeholder="CPF:999.999.999-99" class="input-padrao">
+            <input type="email" id="cadastroEmail" required placeholder="Email:user@user.com" class="input-padrao">
             <input type="text" id="cadastroSenha" required placeholder="Senha" class="input-padrao">
             <input type="text" id="cadastroConfirmarSenha" required placeholder="Confirmar Senha" class="input-padrao">
           </fieldset>
           <div class="entrarSeupet">
-            <a href="index.html"><input type="submit" value="Criar Conta" class="enviar"></a>
+            <!-- <a href="register.html"><input type="submit" value="Criar Conta" class="enviar" onclick="confirmRegister()"></a> -->
+            <input type="submit" value="Criar Conta" class="enviar" onclick="confirmRegister()">
           </div>
         </div>
       </div>
     </div>
   </main>
 </body>
-
 </html>
