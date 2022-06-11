@@ -119,6 +119,13 @@
 
 .footerInfoConteudo {
     margin-top: 1em;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.footerInfoClicando:hover {
+    color: black;
 }
 
 /*----------------------------------------------------------*/
