@@ -12,6 +12,8 @@ function verifyRegister(){
             //Verifica se a senha também é igual
             if (users[key].userKey == userKey){ 
                 //Se ambos forem iguais, retorna a função, redirecionando para home
+                var userLogged = users[key].name; 
+                localStorage.setItem('userLogged',userLogged);
                 document.location='./index.html';
                 return
             }

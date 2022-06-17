@@ -135,5 +135,6 @@ function confirmRegister(){
     if (!registerError) {
         //Salva os dados do usuário no local storage
        saveUser(userData);
+       document.location='./login.html';
     }    
 }
