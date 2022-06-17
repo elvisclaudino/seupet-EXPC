@@ -18,6 +18,7 @@
                     <nav class="cabecalhoLogin">
                         <p id="usuarioLogado"></p>
                     </nav>
+                    <a class="cabecalhoLogout" href="login.html">Sair</a>
             </div>
             <div class="cabecalhoPrincipal">
                 <div class="CabecalhoLogo-Nav">
@@ -34,9 +35,10 @@
                     </nav>
                 </div>
             </div>
+            
             <script>
                 var userLogged = localStorage.getItem('userLogged')
-                document.getElementById("usuarioLogado").innerHTML = '\&#128100' + userLogged;
+                document.getElementById("usuarioLogado").innerHTML = '\&#128100' + userLogged + ' | ';
             </script>
 
         </header>

@@ -31,6 +31,20 @@
     font-size: 20px;
 }
 
+.cabecalhoLogout {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', cursive;;
+    font-size: 24px;
+    transition: 0.5s all;
+}
+.cabecalhoLogout:hover {
+    text-decoration: underline;
+    color: rgb(1, 95, 17);
+}
+
 .loginLink {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -508,7 +522,7 @@
 .selecaoMeupet {
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .tituloSelecaoMeupet {
@@ -811,9 +825,6 @@
         flex-direction: column;
         margin-bottom: 3em;
     }
-    .cabecalhoLogin {
-        justify-content: center;
-    }
     
     /*----------------------------------------------------------*/
 
@@ -937,6 +948,8 @@
 
     /*----------------------------------------------------------*/
 
+    /*--------------------------Meu Pet-------------------------*/
+
     .mainMeupet {
         flex-direction: column;
     }
@@ -965,6 +978,8 @@
     .ultimoInputEnviarSeupet {
         margin-bottom: 1em;
     }
+
+    /*----------------------------------------------------------*/
 }
 
 @media (max-width: 500px) {

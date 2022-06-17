@@ -16,6 +16,7 @@
                     <nav class="cabecalhoLogin">
                         <p id="usuarioLogado"></p>
                     </nav>
+                    <a class="cabecalhoLogout" href="login.html">Sair</a>
             </div>
             <div class="cabecalhoPrincipal">
                 <div class="CabecalhoLogo-Nav">
@@ -32,9 +33,10 @@
                     </nav>
                 </div>
             </div>
+            
             <script>
                 var userLogged = localStorage.getItem('userLogged')
-                document.getElementById("usuarioLogado").innerHTML = '\&#128100' + userLogged;
+                document.getElementById("usuarioLogado").innerHTML = '\&#128100' + userLogged + ' | ';
             </script>
 
         </header>
@@ -57,7 +59,7 @@
                     <input type="date" id="meupetPeso" required class="informMeupet">
 
                     <label class="tituloSelecaoVeterinarios" for="meupetIdade">CEP:</label>
-                    <input type="text" id="meupetIdade" required placeholder="06542-089" class="informMeupet">
+                    <input type="text" id="meupetIdade" required placeholder="00000-000" class="informMeupet">
 
                     <label class="tituloSelecaoVeterinarios" for="meupetIdade">Endereço:</label>
                     <input type="text" id="meupetIdade" required placeholder="Centro, Rua XV de Novembro - Curitiba" class="informMeupet ultimoInputMeupet">
@@ -78,7 +80,7 @@
 
                 <div class="seupetDados">
                     <p class="dadosSeupet" id="nomeUsuario"></p>
-                    <p class="dadosSeupet">Idade: 30</p>
+                    <p class="dadosSeupet">Idade: 30 Anos</p>
                     <p class="dadosSeupet">CEP: 06542-089</p>
                 </div>
 
